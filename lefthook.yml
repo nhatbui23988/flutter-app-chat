@@ -9,5 +9,16 @@ pre-push:
 pre-commit:
   commands:
     pretty:
-      glob: '*.dart'
-      run: flutter format {staged_files} && git add {staged_files}
+      glob: "*.dart"
+      exclude: "locale_keys.g.dart" # regexp filter
+      run: dart format --set-exit-if-changed {staged_files}
+
+    flutter_lint:
+      glob: "*.dart"
+      exclude: .*\.g\.dart$
+      run: flutter analyze {staged_files}
+
+    dart_lint:
+      glob: "*.dart"
+      exclude: "locale_keys.g.dart" # regexp filter
+      run: dart fix --dry-run lib/
