@@ -16,14 +16,14 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 # flutter-app-chat
 # New challenge
-# Ref:[Chat app Tutorial](https://blog.logrocket.com/how-to-build-chat-application-flutter-firebase/)
+# [Chat app Tutorial](https://blog.logrocket.com/how-to-build-chat-application-flutter-firebase/)
 
 # TODO:
 - Creating a new Flutter application
 - Connecting to Firebase services
 - Building a basic UI for the chat application
--- Building a login page with Firebase Authentication
--- Creating a homepage with user contacts
--- Making a profile page that updates Firebase Firestore information
--- Building the chat message page
+1. Building a login page with Firebase Authentication
+2. Creating a homepage with user contacts
+3. Making a profile page that updates Firebase Firestore information
+4. Building the chat message page
 - Deploy the app as a PWA
