@@ -16,3 +16,4 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 # flutter-app-chat
 # New challenge
+# Ref:https://blog.logrocket.com/how-to-build-chat-application-flutter-firebase/
