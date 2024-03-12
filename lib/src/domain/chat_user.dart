@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_app_chat/src/app/app_const.dart';
-import 'package:smart_talk/allConstants/all_constants.dart';
 
 class ChatUser extends Equatable {
   final String id;
