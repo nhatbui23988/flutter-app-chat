@@ -10,7 +10,6 @@ class ChatUser extends Equatable {
   final String phoneNumber;
   final String aboutMe;
 
-
   const ChatUser(
       {required this.id,
         required this.photoUrl,
