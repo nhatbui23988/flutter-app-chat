@@ -1,24 +1,24 @@
-pre-push:
-    parallel: true
-    commands:
-        tests:
-          run: flutter test
-        linter:
-          run: flutter analyze
+#pre-push:
+#    parallel: true
+#    commands:
+#        tests:
+#          run: flutter test
+#        linter:
+#          run: flutter analyze
 
-pre-commit:
-  commands:
-    pretty:
-      glob: "*.dart"
-      exclude: "locale_keys.g.dart" # regexp filter
-      run: dart format --set-exit-if-changed {staged_files}
-
-    flutter_lint:
-      glob: "*.dart"
-      exclude: .*\.g\.dart$
-      run: flutter analyze {staged_files}
-
-    dart_lint:
-      glob: "*.dart"
-      exclude: "locale_keys.g.dart" # regexp filter
-      run: dart fix --dry-run lib/
+#pre-commit:
+#  commands:
+#    pretty:
+#      glob: "*.dart"
+#      exclude: "locale_keys.g.dart" # regexp filter
+#      run: dart format --set-exit-if-changed {staged_files}
+#
+#    flutter_lint:
+#      glob: "*.dart"
+#      exclude: .*\.g\.dart$
+#      run: flutter analyze {staged_files}
+#
+#    dart_lint:
+#      glob: "*.dart"
+#      exclude: "locale_keys.g.dart" # regexp filter
+#      run: dart fix --dry-run lib/

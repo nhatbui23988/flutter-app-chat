@@ -45,8 +45,11 @@ class ChatUser extends Equatable {
 
     try {
       photoUrl = snapshot.get(FirestoreConstants.photoUrl);
+
       nickname = snapshot.get(FirestoreConstants.displayName);
+
       phoneNumber = snapshot.get(FirestoreConstants.phoneNumber);
+
       aboutMe = snapshot.get(FirestoreConstants.aboutMe);
     } catch (e) {
       if (kDebugMode) {
